@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMR SMKN 1 Nganjuk - Palang Merah Remaja</title>
+    <meta name="description" content="Website resmi Palang Merah Remaja (PMR) SMKN 1 Nganjuk - Informasi, Kegiatan, dan Pencatatan Keuangan">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-icon"><i class="fas fa-plus"></i></span>
+                <div class="logo-text">
+                    <strong>PMR</strong>
+                    <small>SMKN 1 Nganjuk</small>
+                </div>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Beranda</a></li>
+                <li><a href="#tentang" class="nav-link">Tentang</a></li>
+                <li><a href="#kegiatan" class="nav-link">Kegiatan</a></li>
+                <li><a href="#galeri" class="nav-link">Galeri</a></li>
+                <li><a href="#keuangan" class="nav-link nav-locked" data-locked="true">
+                    <i class="fas fa-lock" id="lockIcon"></i> Keuangan
+                </a></li>
+                <li><a href="#kontak" class="nav-link">Kontak</a></li>
+                <li class="nav-auth" id="navAuth">
+                    <!-- Akan di-render oleh JS -->
+                </li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-badge">Palang Merah Remaja</span>
+            <h1>PMR SMKN 1 Nganjuk</h1>
+            <p class="hero-tagline">Bakti Kemanusiaan, Dimulai dari Diri Sendiri</p>
+            <p class="hero-desc">Membentuk generasi muda yang peduli, tanggap, dan terampil dalam bidang kemanusiaan dan kesehatan.</p>
+            <div class="hero-buttons">
+                <a href="#tentang" class="btn btn-primary">Tentang Kami</a>
+                <a href="#kegiatan" class="btn btn-outline">Lihat Kegiatan</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><strong>50+</strong><span>Anggota Aktif</span></div>
+                <div class="stat"><strong>20+</strong><span>Kegiatan/Tahun</span></div>
+                <div class="stat"><strong>10+</strong><span>Prestasi</span></div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- TENTANG -->
+    <section class="section" id="tentang">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Tentang Kami</span>
+                <h2 class="section-title">Mengenal PMR SMKN 1 Nganjuk</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Sejarah & Tujuan</h3>
+                    <p>Palang Merah Remaja (PMR) SMKN 1 Nganjuk merupakan ekstrakurikuler yang bergerak di bidang kepalangmerahan, kemanusiaan, dan kesehatan. Didirikan dengan semangat Tri Bakti PMR, kami berkomitmen membentuk siswa-siswi yang berkarakter, peduli sesama, dan terampil dalam pertolongan pertama.</p>
+                    <p>Melalui berbagai pelatihan dan kegiatan, anggota PMR dibekali pengetahuan P3K, kesehatan remaja, bakti sosial, serta kepemimpinan yang bermanfaat bagi diri sendiri maupun masyarakat.</p>
+                </div>
+                <div class="about-card">
+                    <div class="tri-bakti">
+                        <h4><i class="fas fa-heart"></i> Tri Bakti PMR</h4>
+                        <ul>
+                            <li><span>1.</span> Mengabdi kepada masyarakat.</li>
+                            <li><span>2.</span> Meningkatkan mutu kesehatan dan kebersihan lingkungan.</li>
+                            <li><span>3.</span> Menjalin tali persaudaraan Nasional dan Internasional.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vision-mission">
+                <div class="vm-card">
+                    <div class="vm-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>Visi</h3>
+                    <ul>
+                        <li>Membawa nama baik Aresteem Suryaning Jagad di tingkat Kota, Provinsi, dan Nasional.</li>
+                        <li>Unggul dalam etika kepalangmerahan dan disiplin ilmu.</li>
+                        <li>Unggul dalam bidang pertolongan pertama, perawatan keluarga, dan peragaan tandu darurat.</li>
+                    </ul>
+                </div>
+                <div class="vm-card">
+                    <div class="vm-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Misi</h3>
+                    <ul>
+                        <li>Meningkatkan semangat juang dalam bidang kepalangmerahan.</li>
+                        <li>Meningkatkan kedisiplinan para siswa, pembina, guru, dan alumni.</li>
+                        <li>Menciptakan situasi organisasi yang sejahtera dan kekeluargaan yang tinggi.</li>
+                        <li>Meningkatkan solidaritas dan loyalitas.</li>
+                        <li>Menjaga nama baik Pmr Aresteem Suryaning Jagad baik di dalam maupun diluar sekolah.</li>
+                        <li>Meningkatkan kerjasama dengan PMR sekolah-sekolah lain.</li>
+                        <li>Terlaksananya dengan baik program kerja yang sudah di agendakan.</li>
+                        <li>Mewujudkan siswa mampu berbahasa inggris aktif lisan maupun tulisan.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- STRUKTUR -->
+            <div class="section-header" style="margin-top:4rem">
+                <span class="section-subtitle">Pengurus</span>
+                <h2 class="section-title">Struktur Organisasi</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="struktur-grid">
+                <div class="struktur-card pembina">
+                    <div class="struktur-img"><i class="fas fa-user-tie"></i></div>
+                    <h4>Pembina</h4>
+                    <p class="nama">AHMAD HADIYIN, S.Pd</p>
+                    <small>Guru Pembina PMR</small>
+                </div>
+                <div class="struktur-card">
+                    <div class="struktur-img"><i class="fas fa-user"></i></div>
+                    <h4>Ketua</h4>
+                    <p class="nama">CHELSEA PUTRI AMAYLIA</p>
+                    <small>Ketua PMR</small>
+                </div>
+                <div class="struktur-card">
+                    <div class="struktur-img"><i class="fas fa-user"></i></div>
+                    <h4>Wakil Ketua</h4>
+                    <p class="nama">SELVI PURWANINGTIAS</p>
+                    <small>Wakil Ketua PMR</small>
+                </div>
+                <div class="struktur-card">
+                    <div class="struktur-img"><i class="fas fa-user"></i></div>
+                    <h4>Sekretaris</h4>
+                    <p class="nama">NOVRILLA SIFAUL MAGHFIROH</p>
+                    <small>Sekretaris PMR</small>
+                </div>
+                <div class="struktur-card">
+                    <div class="struktur-img"><i class="fas fa-user"></i></div>
+                    <h4>Sekretaris</h4>
+                    <p class="nama">STIVANY ALZAR</p>
+                    <small>Sekretaris 2 PMR</small>
+                </div>
+                <div class="struktur-card">
+                    <div class="struktur-img"><i class="fas fa-user"></i></div>
+                    <h4>Bendahara</h4>
+                    <p class="nama">AZZAHRA CHESTA RAISYA</p>
+                    <small>Bendahara PMR</small>
+                </div>
+                <div class="struktur-card">
+                    <div class="struktur-img"><i class="fas fa-user"></i></div>
+                    <h4>Bendahara</h4>
+                    <p class="nama">WILDHA AULYA AL-MUNAWAROH</p>
+                    <small>Bendahara 2 PMR</small>
+                </div>
+                <div class="struktur-card">
+                    <div class="struktur-img"><i class="fas fa-user"></i></div>
+                    <h4>Humas</h4>
+                    <p class="nama">VANNESIA ALMAFIYAN</p>
+                    <small>Humas PMR</small>
+                </div>
+                <div class="struktur-card">
+                    <div class="struktur-img"><i class="fas fa-user"></i></div>
+                    <h4>Humas</h4>
+                    <p class="nama">SETYO WIBISONO</p>
+                    <small>Humas 2 PMR</small>
+                </div>
+                <div class="struktur-card">
+                    <div class="struktur-img"><i class="fas fa-user"></i></div>
+                    <h4>Humas</h4>
+                    <p class="nama">ALIEF ANAWANG WIDIANTO</p>
+                    <small>Humas 3 PMR</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEGIATAN -->
+    <section class="section section-alt" id="kegiatan">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Program & Kegiatan</span>
+                <h2 class="section-title">Kegiatan PMR</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="kegiatan-grid">
+                <div class="kegiatan-card">
+                    <div class="kegiatan-icon"><i class="fas fa-kit-medical"></i></div>
+                    <h3>Pelatihan P3K</h3>
+                    <p>Pelatihan pertolongan pertama pada kecelakaan untuk meningkatkan keterampilan anggota dalam situasi darurat.</p>
+                </div>
+                <div class="kegiatan-card">
+                    <div class="kegiatan-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                    <h3>Bakti Sosial</h3>
+                    <p>Kegiatan sosial kemasyarakatan seperti donor darah, pembagian sembako, dan kunjungan panti asuhan.</p>
+                </div>
+                <div class="kegiatan-card">
+                    <div class="kegiatan-icon"><i class="fas fa-campground"></i></div>
+                    <h3>Perkemahan</h3>
+                    <p>Perkemahan PMR tingkat sekolah dan kabupaten untuk mempererat kebersamaan dan mengasah keterampilan.</p>
+                </div>
+                <div class="kegiatan-card">
+                    <div class="kegiatan-icon"><i class="fas fa-heart-pulse"></i></div>
+                    <h3>PHBS Sekolah</h3>
+                    <p>Promosi Perilaku Hidup Bersih dan Sehat di lingkungan sekolah melalui penyuluhan dan aksi nyata.</p>
+                </div>
+                <div class="kegiatan-card">
+                    <div class="kegiatan-icon"><i class="fas fa-users"></i></div>
+                    <h3>Latihan Rutin</h3>
+                    <p>Pertemuan mingguan untuk materi kepalangmerahan, kepemimpinan, dan pengembangan karakter anggota.</p>
+                </div>
+                <div class="kegiatan-card">
+                    <div class="kegiatan-icon"><i class="fas fa-trophy"></i></div>
+                    <h3>Lomba & Kompetisi</h3>
+                    <p>Mengikuti berbagai lomba PMR tingkat kabupaten, provinsi, hingga nasional sebagai ajang prestasi.</p>
+                </div>
+            </div>
+
+            <!-- Jadwal -->
+            <div class="jadwal-section">
+                <h3><i class="fas fa-calendar-days"></i> Jadwal Latihan Rutin</h3>
+                <div class="jadwal-grid">
+                    <div class="jadwal-item">
+                        <strong>Selasa</strong>
+                        <span>15.00 - 16.30 WIB</span>
+                        <small>Forum Rutin</small>
+                    </div>
+                    <div class="jadwal-item">
+                        <strong>Sabtu</strong>
+                        <span>08.00 - 11.00 WIB</span>
+                        <small>Kegiatan Ekstrakurikuler</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERI -->
+    <section class="section" id="galeri">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Dokumentasi</span>
+                <h2 class="section-title">Galeri Kegiatan</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="galeri-grid">
+                <div class="galeri-item"><img src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=600" alt="Kegiatan 1"><div class="galeri-overlay"><span>Pelatihan P3K</span></div></div>
+                <div class="galeri-item"><img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600" alt="Kegiatan 2"><div class="galeri-overlay"><span>Bakti Sosial</span></div></div>
+                <div class="galeri-item"><img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600" alt="Kegiatan 3"><div class="galeri-overlay"><span>Donor Darah</span></div></div>
+                <div class="galeri-item"><img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=600" alt="Kegiatan 4"><div class="galeri-overlay"><span>Perkemahan</span></div></div>
+                <div class="galeri-item"><img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=600" alt="Kegiatan 5"><div class="galeri-overlay"><span>Latihan Rutin</span></div></div>
+                <div class="galeri-item"><img src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=600" alt="Kegiatan 6"><div class="galeri-overlay"><span>Lomba PMR</span></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEUANGAN -->
+    <section class="section section-alt" id="keuangan">
+        <!-- Login Gate -->
+        <div class="auth-gate" id="authGate">
+            <div class="auth-gate-content">
+                <div class="auth-gate-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h2>Akses Terbatas</h2>
+                <p>Halaman pencatatan keuangan hanya dapat diakses oleh <strong>anggota PMR</strong> yang terdaftar.</p>
+                <button class="btn btn-primary" id="openLoginBtn">
+                    <i class="fas fa-sign-in-alt"></i> Login Anggota
+                </button>
+                <small class="auth-gate-note">
+                    Belum punya akun? Hubungi pengurus PMR untuk pendaftaran.
+                </small>
+            </div>
+        </div>
+
+        <!-- Konten Keuangan (tersembunyi sampai login) -->
+        <div class="keuangan-content" id="keuanganContent" style="display:none;">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Transparansi</span>
+                    <h2 class="section-title">Pencatatan Keuangan</h2>
+                    <div class="divider"></div>
+                    <p style="max-width:600px;margin:1rem auto 0;color:#666">
+                        Selamat datang, <strong id="welcomeUser">Anggota</strong>. 
+                        Data tersimpan otomatis di browser Anda.
+                    </p>
+                </div>
+
+                <!-- Admin Panel (hanya muncul untuk admin) -->
+                <div class="admin-panel" id="adminPanel" style="display:none;">
+                    <div class="admin-header">
+                        <h3><i class="fas fa-user-shield"></i> Panel Admin</h3>
+                        <span class="admin-badge">Administrator</span>
+                    </div>
+                    <div class="admin-body">
+                        <div class="admin-tabs">
+                            <button class="admin-tab active" data-tab="members">Kelola Anggota</button>
+                            <button class="admin-tab" data-tab="addMember">Tambah Anggota</button>
+                        </div>
+                        
+                        <!-- Tab: Kelola Anggota -->
+                        <div class="admin-tab-content active" id="tab-members">
+                            <div class="table-responsive">
+                                <table class="finance-table">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Username</th>
+                                            <th>Nama Lengkap</th>
+                                            <th>Role</th>
+                                            <th>Status</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="membersTableBody"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <!-- Tab: Tambah Anggota -->
+                        <div class="admin-tab-content" id="tab-addMember">
+                            <form id="addMemberForm" class="finance-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Username</label>
+                                        <input type="text" id="newUsername" placeholder="contoh: budi_santoso" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Nama Lengkap</label>
+                                        <input type="text" id="newFullname" placeholder="Budi Santoso" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Password</label>
+                                        <input type="password" id="newPassword" placeholder="Minimal 6 karakter" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Role</label>
+                                        <select id="newRole" required>
+                                            <option value="member">Anggota</option>
+                                            <option value="admin">Admin</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-user-plus"></i> Tambah Anggota
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Summary Cards -->
+                <div class="finance-summary">
+                    <div class="summary-card income">
+                        <div class="summary-icon"><i class="fas fa-arrow-down"></i></div>
+                        <div>
+                            <small>Total Pemasukan</small>
+                            <h3 id="totalIncome">Rp 0</h3>
+                        </div>
+                    </div>
+                    <div class="summary-card expense">
+                        <div class="summary-icon"><i class="fas fa-arrow-up"></i></div>
+                        <div>
+                            <small>Total Pengeluaran</small>
+                            <h3 id="totalExpense">Rp 0</h3>
+                        </div>
+                    </div>
+                    <div class="summary-card balance">
+                        <div class="summary-icon"><i class="fas fa-wallet"></i></div>
+                        <div>
+                            <small>Saldo</small>
+                            <h3 id="totalBalance">Rp 0</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Input -->
+                <div class="finance-form-wrapper">
+                    <h3><i class="fas fa-plus-circle"></i> Tambah Transaksi</h3>
+                    <form id="financeForm" class="finance-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Tanggal</label>
+                                <input type="date" id="tanggal" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Jenis Transaksi</label>
+                                <select id="jenis" required>
+                                    <option value="masuk">Pemasukan</option>
+                                    <option value="keluar">Pengeluaran</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Kategori</label>
+                                <select id="kategori" required>
+                                    <option value="Iuran Anggota">Iuran Anggota</option>
+                                    <option value="Dana Sekolah">Dana Sekolah</option>
+                                    <option value="Donasi">Donasi</option>
+                                    <option value="Bakti Sosial">Bakti Sosial</option>
+                                    <option value="Perlengkapan">Perlengkapan</option>
+                                    <option value="Konsumsi">Konsumsi</option>
+                                    <option value="Transportasi">Transportasi</option>
+                                    <option value="Lainnya">Lainnya</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Jumlah (Rp)</label>
+                                <input type="number" id="jumlah" min="0" placeholder="0" required>
+                            </div>
+                        </div>
+                        <div class="form-group full">
+                            <label>Keterangan</label>
+                            <input type="text" id="keterangan" placeholder="Contoh: Iuran bulan September 2026" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Simpan Transaksi</button>
+                    </form>
+                </div>
+
+                <!-- Filter & Table -->
+                <div class="finance-table-wrapper">
+                    <div class="table-header">
+                        <h3><i class="fas fa-list"></i> Riwayat Transaksi</h3>
+                        <div class="table-actions">
+                            <select id="filterBulan">
+                                <option value="all">Semua Bulan</option>
+                                <option value="0">Januari</option>
+                                <option value="1">Februari</option>
+                                <option value="2">Maret</option>
+                                <option value="3">April</option>
+                                <option value="4">Mei</option>
+                                <option value="5">Juni</option>
+                                <option value="6">Juli</option>
+                                <option value="7">Agustus</option>
+                                <option value="8">September</option>
+                                <option value="9">Oktober</option>
+                                <option value="10">November</option>
+                                <option value="11">Desember</option>
+                            </select>
+                            <button class="btn btn-outline btn-sm" id="exportBtn"><i class="fas fa-file-csv"></i> Export CSV</button>
+                            <button class="btn btn-danger btn-sm" id="resetBtn"><i class="fas fa-trash"></i> Reset</button>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="finance-table">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Tanggal</th>
+                                    <th>Jenis</th>
+                                    <th>Kategori</th>
+                                    <th>Keterangan</th>
+                                    <th>Jumlah</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody id="financeTableBody">
+                                <tr class="empty-state">
+                                    <td colspan="7">Belum ada transaksi.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Login -->
+    <div class="auth-modal" id="authModal">
+        <div class="auth-modal-backdrop" id="authModalBackdrop"></div>
+        <div class="auth-modal-content">
+            <button class="auth-modal-close" id="authModalClose">&times;</button>
+            
+            <div class="auth-modal-header">
+                <div class="auth-logo">
+                    <span class="logo-icon"><i class="fas fa-plus"></i></span>
+                </div>
+                <h2>Login PMR</h2>
+                <p>Masuk untuk mengakses pencatatan keuangan</p>
+            </div>
+            
+            <form id="loginForm" class="auth-form">
+                <div class="auth-form-group">
+                    <label><i class="fas fa-user"></i> Username</label>
+                    <input type="text" id="loginUsername" placeholder="Masukkan username" required autocomplete="username">
+                </div>
+                <div class="auth-form-group">
+                    <label><i class="fas fa-lock"></i> Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="loginPassword" placeholder="Masukkan password" required autocomplete="current-password">
+                        <button type="button" class="password-toggle" id="passwordToggle">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="auth-form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="rememberMe" checked>
+                        <span>Ingat saya di perangkat ini</span>
+                    </label>
+                </div>
+                <div class="auth-error" id="authError" style="display:none;">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span id="authErrorMsg">Username atau password salah</span>
+                </div>
+                <button type="submit" class="btn btn-primary auth-submit">
+                    <i class="fas fa-sign-in-alt"></i> Masuk
+                </button>
+            </form>
+            
+            <div class="auth-modal-footer">
+                <p><i class="fas fa-info-circle"></i> Belum punya akun? Hubungi pengurus PMR.</p>
+                <small>Akun default admin: <code>admin</code> / <code>pmrsmkn1</code></small>
+            </div>
+        </div>
+    </div>
+
+    <!-- KONTAK -->
+    <section class="section" id="kontak">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Hubungi Kami</span>
+                <h2 class="section-title">Kontak PMR</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="kontak-grid">
+                <div class="kontak-card">
+                    <div class="kontak-icon"><i class="fas fa-location-dot"></i></div>
+                    <h4>Alamat</h4>
+                    <p>SMKN 1 Nganjuk<br>Jl. Raya Nganjuk, Jawa Timur</p>
+                </div>
+                <div class="kontak-card">
+                    <div class="kontak-icon"><i class="fas fa-envelope"></i></div>
+                    <h4>Email</h4>
+                    <p>pmr@smkn1nganjuk.sch.id</p>
+                </div>
+                <div class="kontak-card">
+                    <div class="kontak-icon"><i class="fab fa-instagram"></i></div>
+                    <h4>Instagram</h4>
+                    <p>@pmr_smkn1nganjuk</p>
+                </div>
+                <div class="kontak-card">
+                    <div class="kontak-icon"><i class="fab fa-whatsapp"></i></div>
+                    <h4>WhatsApp</h4>
+                    <p>+62 812-xxxx-xxxx</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="nav-logo">
+                        <span class="logo-icon"><i class="fas fa-plus"></i></span>
+                        <div class="logo-text">
+                            <strong>PMR</strong>
+                            <small>SMKN 1 Nganjuk</small>
+                        </div>
+                    </div>
+                    <p>Bakti Kemanusiaan, Dimulai dari Diri Sendiri.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Menu</h4>
+                    <a href="#tentang">Tentang</a>
+                    <a href="#kegiatan">Kegiatan</a>
+                    <a href="#keuangan">Keuangan</a>
+                    <a href="#kontak">Kontak</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Ikuti Kami</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 PMR SMKN 1 Nganjuk. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/keuangan.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/keuangan.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
